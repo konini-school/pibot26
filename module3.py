@@ -16,7 +16,7 @@ GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(7, GPIO.OUT)
 
-ledOnTime=10
+ledOnTime=15
 # Turn on LED
 print 'Turn the LED on'
 GPIO.output(7, True)
