@@ -20,10 +20,10 @@ ledOnTime=7
 # Turn on LED
 print 'Turn the LED on'
 GPIO.output(8, True)
-time.sleep(ledOnTime)
+time.sleep(7)
 print 'Turn the LED off'
-GPIO.output(9, False)
+GPIO.output(2, False)
 
-GPIO.cleanup(1)
+GPIO.cleanup(8)
    
 print "\nstop of program"
