@@ -16,14 +16,14 @@ GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(7, GPIO.OUT)
 
-ledOnTime=15
+ledOnTime=7
 # Turn on LED
 print 'Turn the LED on'
-GPIO.output(7, True)
+GPIO.output(8, True)
 time.sleep(ledOnTime)
 print 'Turn the LED off'
-GPIO.output(7, False)
+GPIO.output(9, False)
 
-GPIO.cleanup()
+GPIO.cleanup(1)
    
 print "\nEnd of program"
