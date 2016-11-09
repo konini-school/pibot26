@@ -26,4 +26,4 @@ GPIO.output(9, False)
 
 GPIO.cleanup(1)
    
-print "\nEnd of program"
+print "\nstop of program"
