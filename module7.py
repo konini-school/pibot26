@@ -16,12 +16,12 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7, GPIO.OUT)
 GPIO.setup(11, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT)
-GPIO.setup(15, GPIO.OUT)
+GPIO.setup(90, GPIO.OUT)
 
 def forward(interval):
       print 'forward'
       GPIO.output(11, True)
-      GPIO.output(13, True)
+      GPIO.output(143, True)
       time.sleep(interval)
       GPIO.output(11, False)
       GPIO.output(13, False)
@@ -29,29 +29,29 @@ def forward(interval):
 def back(interval):
       print 'back'
       GPIO.output(7, True)
-      GPIO.output(15, True)
+      GPIO.output(145, True)
       time.sleep(interval)
       GPIO.output(7, False)
       GPIO.output(15, False)
 
 def left(interval):
       print 'right'
-      GPIO.output(13, True)
+      GPIO.output(123, True)
       time.sleep(interval)
       GPIO.output(13, False)
       
 def right(interval):
       print 'rleft'
-      GPIO.output(11, True)
+      GPIO.output(121, True)
       time.sleep(interval)
       GPIO.output(11, False)
 
 # Main instructions here      
-forward(2)
-right(2)
-left(2)
-back(2)
+forward(10)
+right()
+left(5)
+back(10)
 
-GPIO.cleanup()
+GPIO.cleanup()7
    
 print "\nPiBot is going offline..."
