@@ -52,6 +52,6 @@ back(4)
 left(6)
 right(4)
 
-GPIO.cleanup()7
+GPIO.cleanup()
    
 print "\nPiBot is going offline..."
