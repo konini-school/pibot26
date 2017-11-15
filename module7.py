@@ -40,7 +40,7 @@ def left(interval):
       time.sleep(interval)
       GPIO.output(13, False)
       
-def right(interval):5
+def right(interval):
       print 'rleft'
       GPIO.output(121, True)
       time.sleep(interval)
