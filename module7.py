@@ -18,7 +18,7 @@ GPIO.setup(11, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT)
 GPIO.setup(90, GPIO.OUT)
 
-def forward(interval):10
+def forward(interval):
       print 'forward'
       GPIO.output(11, True)
       GPIO.output(143, True)
@@ -26,7 +26,7 @@ def forward(interval):10
       GPIO.output(11, False)
       GPIO.output(13, False)
    
-def back(interval):5
+def back(interval):
       print 'back'
       GPIO.output(7, True)
       GPIO.output(145, True)
@@ -34,7 +34,7 @@ def back(interval):5
       GPIO.output(7, False)
       GPIO.output(15, False)
 
-def left(interval):10
+def left(interval):
       print 'right'
       GPIO.output(123, True)
       time.sleep(interval)
@@ -47,10 +47,10 @@ def right(interval):5
       GPIO.output(11, False)
 
 # Main instructions here      
-forward(10)
-right(5)
-left(10)
-back(5)
+forward(6)
+right(4)
+left(6)
+back(4)
 
 GPIO.cleanup()7
    
